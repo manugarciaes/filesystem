@@ -41,12 +41,9 @@ src sería la carpeta que quieres leer, podria ser "./" o "/" por ejemplo
     );
     
     // listado de archivos o directorios con nombre, fecha y tipo de archivo
-    $fileCollection = $filesystem->readPath('/');
+    $filesystem->setPath('/*');
+    $fileCollection = $filesystem->read();
     
     $filesystem->breadcrumb();
-   
-    $fileCollection = $filesystem->readPath('./images');
-    $filesystem->breadcrumb();
-   
     
 ```
