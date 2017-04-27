@@ -23,6 +23,10 @@ Sobre el breadcrumb he hecho algo muy sencillo, un formatter
 que pasado el path lo formatea, tambien he usado interfaces
 por si se quisiera usar algo diferente en un futuro.
 
+# Command Line
+1) Composer install
+2) php test.php "src"
+
 # USAGE
 
 ```
