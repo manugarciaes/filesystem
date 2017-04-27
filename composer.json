@@ -1,0 +1,21 @@
+{
+  "name": "manuel.garcia/filesystem",
+  "description": "Filesystem Test",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "filesystem\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Manu Garcia",
+      "email": "manugarciaes@gmail.com"
+    }
+  ]
+}
