@@ -16,7 +16,7 @@ $fileSystem = new FileSystem(
     new BreadCrumb()
 );
 
-$fileSystem->setPath('./*');
+$fileSystem->setPath($_SERVER['argv']['1'].'/*');
 $list = $fileSystem->read();
 
-print_r($list);
+echo json_encode($list->get(), JSON_PRETTY_PRINT);

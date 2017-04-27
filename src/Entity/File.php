@@ -17,7 +17,7 @@ namespace filesystem\Entity;
  * Class File
  * @package filesystem\Entity
  */
-class File {
+class File implements \JsonSerializable {
 
     /**
      * @var string
@@ -89,5 +89,17 @@ class File {
         $this->createdAt = new \DateTime($createdAt);
 
         return $this;
+    }
+
+    /**
+     * @return array
+     */
+    function jsonSerialize()
+    {
+        return [
+            'name' => $this->name,
+            'createdAt' => $this->createdAt->format('d/m/Y H:i:s'),
+            'isDir' => $this->isDir
+        ];
     }
 }
