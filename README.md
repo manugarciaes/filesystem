@@ -25,7 +25,8 @@ por si se quisiera usar algo diferente en un futuro.
 
 # Command Line
 1) Composer install
-2) php test.php "src"
+2) php test.php "src" 
+src sería la carpeta que quieres leer, podria ser "./" o "/" por ejemplo
 
 # USAGE
 
